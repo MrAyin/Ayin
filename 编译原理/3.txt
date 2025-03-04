@@ -1,0 +1,116 @@
+  <fun_declaration> 1
+    function
+    ID: f
+    (
+    )
+    <function_body> 2
+      {
+      <declaration_list> 3
+        <declaration_stat> 3
+          int
+          ID: a
+          ;
+        <declaration_stat> 4
+          int
+          ID: b
+          ;
+      <statement_list> 5
+        <statement> 5
+          <read_stat> 5
+            read
+            ID: a
+            ;
+        <statement> 6
+          <expression_stat> 6
+            <expression> 6
+              =
+              <bool_expr> 6
+                <additive_expr> 6
+                  <term> 6
+                    <factor> 6
+                      NUM: 5
+            ;
+        <statement> 7
+          <while_stat> 7
+            while
+            (
+            <bool_expr> 7
+              <additive_expr> 7
+                <term> 7
+                  <factor> 7
+                    ID: a
+              <=
+              <additive_expr> 7
+                <term> 7
+                  <factor> 7
+                    NUM: 3
+            )
+            <statement> 7
+              <compound_stat> 7
+                {
+                <statement_list> 8
+                  <statement> 8
+                    <expression_stat> 8
+                      <expression> 8
+                        =
+                        <bool_expr> 8
+                          <additive_expr> 8
+                            <term> 8
+                              <factor> 8
+                                ID: b
+                            +
+                            <term> 8
+                              <factor> 8
+                                NUM: 5
+                      ;
+                  <statement> 9
+                    <expression_stat> 9
+                      <expression> 9
+                        =
+                        <bool_expr> 9
+                          <additive_expr> 9
+                            <term> 9
+                              <factor> 9
+                                ID: a
+                            +
+                            <term> 9
+                              <factor> 9
+                                NUM: 1
+                      ;
+                  <statement> 10
+                    <write_stat> 10
+                      write
+                      <expression> 10
+                        <bool_expr> 10
+                          <additive_expr> 10
+                            <term> 10
+                              <factor> 10
+                                ID: b
+                      ;
+                }
+        <statement> 12
+          <write_stat> 12
+            write
+            <expression> 12
+              <bool_expr> 12
+                <additive_expr> 12
+                  <term> 12
+                    <factor> 12
+                      ID: a
+            ;
+      }
+  <main_declaration> 14
+    main
+    (
+    )
+    <function_body> 15
+      {
+      <statement_list> 16
+        <statement> 16
+          <call_stat> 16
+            call
+            ID: f
+            (
+            )
+            ;
+      }
